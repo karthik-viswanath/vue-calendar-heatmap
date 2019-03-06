@@ -1,10 +1,10 @@
 import { DAYS_IN_ONE_YEAR, DAYS_IN_WEEK } from './consts'
 
 export default class CalendarHeatmap {
-  constructor (endDate, values, max) {
+  constructor (endDate, values, max, startDate) {
     this.endDate = this._parseDate(endDate)
     this.max = max || Math.ceil((Math.max(...values.map(day => day.count)) / 5) * 4)
-    this.startDate = this._parseDate(endDate)
+    this.startDate = this._parseDate(startDate)
     this.values = values
   }
 
