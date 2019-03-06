@@ -4,8 +4,8 @@ export const DEFAULT_LOCALE = {
   months: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
   days: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
   on: 'on',
-  less: 'Less',
-  more: 'More'
+  less: 'Low',
+  more: 'High'
 }
 
 export const DEFAULT_TOOLTIP_UNIT = 'contributions'
