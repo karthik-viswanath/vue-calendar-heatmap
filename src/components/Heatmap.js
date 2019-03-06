@@ -4,7 +4,7 @@ export default class CalendarHeatmap {
   constructor (endDate, values, max) {
     this.endDate = this._parseDate(endDate)
     this.max = max || Math.ceil((Math.max(...values.map(day => day.count)) / 5) * 4)
-    this.startDate = this._shiftDate(endDate, -DAYS_IN_ONE_YEAR)
+    this.startDate = this._parseDate(endDate)
     this.values = values
   }
 
